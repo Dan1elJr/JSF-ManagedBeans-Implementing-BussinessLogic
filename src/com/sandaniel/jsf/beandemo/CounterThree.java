@@ -1,32 +1,32 @@
 package com.sandaniel.jsf.beandemo;
 
-import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 
 @ManagedBean
-@ApplicationScoped
-public class CounterTwo {
+@RequestScoped
+public class CounterThree {
 	
 	private int value;
 	
-	public CounterTwo() {}
-
+	public CounterThree() {}
+	
+	
 	public int getValue() {
+		
 		return value;
 	}
-
+	
 	public void setValue(int value) {
+		
 		this.value = value;
 	}
-	
 	
 	public String incrementValue() {
 		
 		value++;
 		
-		
-		return "counter_two";
-		
+		return "counter_three";
 	}
-	
+
 }

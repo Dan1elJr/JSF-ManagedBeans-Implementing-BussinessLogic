@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en"
+xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+	<h:head>
+		<title>
+			Counter Three - Request Scoped Test
+		</title>
+		
+	</h:head>
+	
+		
+	<h:body>
+	
+		<h1>Counter Three - Request Scoped Test</h1>
+		<hr/>
+		<br/>
+		<h3 style="display: inline-block ; padding-right:10px">Counter value</h3>: #{counterThree.value}
+		
+		<h:form>
+		
+			<h:commandButton value="Increment" action="#{counterThree.incrementValue()}"/>
+		</h:form>
+	</h:body>
+
+</html>

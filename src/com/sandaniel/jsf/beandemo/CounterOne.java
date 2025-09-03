@@ -1,21 +1,24 @@
 package com.sandaniel.jsf.beandemo;
 
-import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
 @ManagedBean
-@ApplicationScoped
-public class CounterTwo {
+@SessionScoped
+public class CounterOne {
 	
 	private int value;
 	
-	public CounterTwo() {}
-
+	public CounterOne() {}
+	
+	
 	public int getValue() {
+		
 		return value;
 	}
-
+	
 	public void setValue(int value) {
+		
 		this.value = value;
 	}
 	
@@ -24,9 +27,6 @@ public class CounterTwo {
 		
 		value++;
 		
-		
-		return "counter_two";
-		
+		return "counter_one";
 	}
-	
 }
